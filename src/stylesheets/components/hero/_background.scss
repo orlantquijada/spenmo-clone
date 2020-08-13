@@ -1,0 +1,12 @@
+@import "../../config.scss";
+
+.hero__background {
+  @include flexbox;
+
+  &__image {
+    position: absolute;
+    right: 1rem;
+
+    opacity: 0;
+  }
+}

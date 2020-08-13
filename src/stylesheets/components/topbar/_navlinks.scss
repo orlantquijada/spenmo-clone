@@ -1,0 +1,100 @@
+@import "../../config.scss";
+
+.nav-links {
+  margin-left: 4rem;
+  @include flexbox;
+
+  .link {
+    text-decoration: none;
+
+    color: $light-gray;
+    font-weight: $bold;
+    font-size: 0.9rem;
+
+    transition: all 200ms ease;
+
+    cursor: pointer;
+
+    margin: 0 2rem;
+
+    @include flexbox;
+
+    &:hover {
+      color: $primary-orange;
+
+      .arrow-down__icon {
+        fill: $primary-orange;
+      }
+    }
+
+    &__text {
+      @include flexbox;
+    }
+
+    .arrow-down {
+      display: flex;
+
+      height: 16px;
+      width: 10px;
+
+      margin-left: 0.5rem;
+
+      svg {
+        height: 100%;
+        width: 100%;
+
+        fill: $light-gray;
+      }
+    }
+
+    &.more {
+      position: relative;
+
+      transition: all 200ms ease;
+
+      &:hover {
+        .dropdown {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      .dropdown {
+        opacity: 0;
+        visibility: hidden;
+
+        position: absolute;
+        top: 32px;
+
+        padding: 8px;
+
+        border-radius: 5px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        background-color: white;
+
+        transition: all 200ms ease;
+
+        @include flexbox($direction: column);
+
+        &__link {
+          margin: 0 1.5rem;
+          padding: 8px 16px;
+
+          color: $light-gray;
+          text-decoration: none;
+
+          transition: color 200ms ease;
+
+          &:hover {
+            color: $primary-orange;
+          }
+
+          &__text {
+            line-height: 1.5rem;
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}

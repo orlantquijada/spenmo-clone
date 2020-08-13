@@ -1,0 +1,67 @@
+@import "../../config.scss";
+
+.hero__content {
+  padding: 0 15px;
+
+  @include flexbox($direction: column, $align: flex-start);
+
+  &__header,
+  &__subheader,
+  &__cta,
+  &__subtext {
+    opacity: 1;
+  }
+
+  &__header {
+    font-weight: $bold;
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+    letter-spacing: -0.005em;
+    color: $black;
+
+    margin-bottom: 1rem;
+  }
+
+  &__subheader {
+    font-size: 1.25rem;
+    font-weight: $normal;
+    line-height: 2.125rem;
+    color: $gray;
+    margin-bottom: 2rem;
+  }
+
+  &__cta {
+    width: 200px;
+    height: 60px;
+
+    padding: 14px;
+    border: none;
+    border-radius: 1000px;
+
+    background-image: $primary-gradient;
+
+    transition: opacity 200ms ease;
+
+    cursor: pointer;
+
+    @include flexbox;
+
+    &:hover {
+      opacity: $opacity-on-hover;
+    }
+
+    &__text {
+      font-weight: $bold;
+      font-size: 1rem;
+      color: white;
+    }
+  }
+
+  &__subtext {
+    font-size: 0.9rem;
+    font-weight: $normal;
+    line-height: 1.25rem;
+    color: $gray;
+    margin: 1rem;
+  }
+}

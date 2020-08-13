@@ -1,13 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Static Site Boilerplate</title>
     <meta name="description" content="" />
-</head>
-<body>
-
-    <h1>hello world</h1>
-
-</body>
+  </head>
+  <body>
+    <!-- top bar -->
+    <div class="top-bar">
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="../src/images/logo.svg"
+            alt=""
+            srcset=""
+            class="logo__img"
+          />
+        </a>
+        <nav class="nav-links">
+          <a href="#" class="link"
+            ><span class="link__text">How it Works</span></a
+          ><a href="#" class="link"><span class="link__text">Pricing</span></a
+          ><a href="#" class="link"><span class="link__text">Use Cases</span></a
+          ><span class="link more"
+            ><span class="link__text"
+              >More
+              <span class="arrow-down"
+                ><svg class="arrow-down__icon">
+                  <use
+                    xlink:href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMCIgaGVpZ2h0PSIwIiBjbGFzcz0iaGlkZGVuIj4KICA8c3ltYm9sIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDQ5MS45OTYgNDkxLjk5NiIgaWQ9ImFycm93LWRvd24iPgogICAgPHBhdGggZD0iTTQ4NC4xMzIgMTI0Ljk4NmwtMTYuMTE2LTE2LjIyOGMtNS4wNzItNS4wNjgtMTEuODItNy44Ni0xOS4wMzItNy44Ni03LjIwOCAwLTEzLjk2NCAyLjc5Mi0xOS4wMzYgNy44NmwtMTgzLjg0IDE4My44NDhMNjIuMDU2IDEwOC41NTRjLTUuMDY0LTUuMDY4LTExLjgyLTcuODU2LTE5LjAyOC03Ljg1NnMtMTMuOTY4IDIuNzg4LTE5LjAzNiA3Ljg1NmwtMTYuMTIgMTYuMTI4Yy0xMC40OTYgMTAuNDg4LTEwLjQ5NiAyNy41NzIgMCAzOC4wNmwyMTkuMTM2IDIxOS45MjRjNS4wNjQgNS4wNjQgMTEuODEyIDguNjMyIDE5LjA4NCA4LjYzMmguMDg0YzcuMjEyIDAgMTMuOTYtMy41NzIgMTkuMDI0LTguNjMybDIxOC45MzItMjE5LjMyOGM1LjA3Mi01LjA2NCA3Ljg1Ni0xMi4wMTYgNy44NjQtMTkuMjI0IDAtNy4yMTItMi43OTItMTQuMDY4LTcuODY0LTE5LjEyOHoiPjwvcGF0aD4KICA8L3N5bWJvbD4KPC9zdmc+#arrow-down"
+                  ></use>
+                </svg>
+              </span>
+            </span>
+            <div class="dropdown">
+              <a href="#" class="dropdown__link">
+                <span class="dropdown__link__text">Partners</span>
+              </a>
+              <a href="#" class="dropdown__link">
+                <span class="dropdown__link__text">Credit</span>
+              </a>
+              <a href="#" class="dropdown__link">
+                <span class="dropdown__link__text">FAQs</span>
+              </a>
+              <a href="#" class="dropdown__link">
+                <span class="dropdown__link__text">Blogs</span>
+              </a>
+            </div>
+          </span>
+        </nav>
+        <div class="auth-links">
+          <a href="#" class="link link--secondary">
+            <span class="link__text">Login</span>
+          </a>
+          <button class="link link--primary">
+            <span class="link__text">Sign Up</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+    <!-- hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h3 class="hero__content__header">
+            Manage your company spending efficiently
+          </h3>
+          <p class="hero__content__subheader">
+            Company cards, local &amp; overseas invoice payment, approval-based
+            spending and accounting automation
+          </p>
+          <button class="hero__content__cta">
+            <span class="hero__content__cta__text">Sign Up</span>
+          </button>
+          <p class="hero__content__subtext">
+            0% fees for local and foreign payments
+          </p>
+        </div>
+        <div class="hero__background">
+          <img
+            src="./images/hero.png"
+            alt="
+            "
+            class="hero__background__image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+    <!-- partners -->
+    <section class="partners">
+      <div class="container">
+        <p class="title">
+          Empowering many businesses across
+          <a href="#" class="asia-pacific-link"><span>Asia Pacific</span></a>
+        </p>
+        <div class="companies">
+          <div class="company">
+            <a href="#" class="company__link"
+              ><img src="./images/glints.png" alt=""
+            /></a>
+          </div>
+          <div class="company">
+            <a href="#" class="company__link"
+              ><img src="./images/funding.png" alt=""
+            /></a>
+          </div>
+          <div class="company">
+            <a href="#" class="company__link"
+              ><img src="./images/hubspot.png" alt=""
+            /></a>
+          </div>
+          <div class="company">
+            <a href="#" class="company"><img src="./images/m1.png" alt="" /></a>
+          </div>
+          <div class="company">
+            <a href="#" class="company__link"
+              ><img src="./images/caterspot.png" alt=""
+            /></a>
+          </div>
+          <div class="company">
+            <a href="#" class="company__link"
+              ><img src="./images/aws.png" alt=""
+            /></a>
+          </div>
+          <div class="company">
+            <a href="#" class="company__link"
+              ><img src="./images/minterest.png" alt=""
+            /></a>
+          </div>
+          <div class="company">
+            <a href="#" class="company__link"
+              ><img src="./images/validus.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+  </body>
 </html>

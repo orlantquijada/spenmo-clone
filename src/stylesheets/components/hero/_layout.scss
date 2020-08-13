@@ -1,0 +1,15 @@
+@import "../../config.scss";
+
+.hero {
+  height: calc(80vh - 100px);
+  min-height: calc(750px - 5rem);
+
+  @include flexbox;
+
+  .container {
+    display: grid;
+    grid-template-columns: 41.67% auto;
+
+    height: 100%;
+  }
+}

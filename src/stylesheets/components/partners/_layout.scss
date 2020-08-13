@@ -1,0 +1,46 @@
+@import "../../config.scss";
+
+.partners {
+  padding: 1.5rem 0;
+  @include flexbox;
+
+  .container {
+    @include flexbox($direction: column);
+  }
+
+  .title {
+    font-size: 1.25rem;
+    font-weight: $normal;
+    line-height: 2.125rem;
+    color: $gray;
+
+    margin-bottom: 3rem;
+
+    .asia-pacific-link {
+      color: $primary-orange;
+      font-weight: $bold;
+      text-decoration: none;
+
+      &:hover {
+        opacity: $opacity-on-hover;
+      }
+    }
+  }
+
+  .companies {
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    justify-items: center;
+
+    .company {
+      width: 100%;
+      height: 100%;
+
+      margin-bottom: 2rem;
+
+      @include flexbox($align: flex-start);
+    }
+  }
+}

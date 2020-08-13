@@ -12,9 +12,14 @@
 
 body {
   font-family: "Inter", sans-serif;
+  color: $black;
+
+  min-height: 150vh;
+
+  overflow-x: hidden;
 }
 
-[container] {
+.container {
   width: 100%;
   max-width: 1140px;
 }

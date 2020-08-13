@@ -1,0 +1,35 @@
+@import "../../config.scss";
+
+.top-bar {
+  z-index: 1000;
+
+  padding: 1rem;
+  background-color: transparent;
+
+  height: 72.5px;
+
+  position: sticky;
+  top: 0;
+
+  transition: all 200ms ease;
+
+  @include flexbox;
+
+  &--on-scroll {
+    background-color: white;
+    box-shadow: rgba(127, 163, 202, 0.1) 0px 5px 15px;
+  }
+
+  .logo__img {
+    height: 2rem;
+    transition: all 200ms ease;
+
+    &--on-scroll {
+      height: 2.5rem;
+    }
+  }
+
+  .container {
+    @include flexbox($justfy: space-between);
+  }
+}
