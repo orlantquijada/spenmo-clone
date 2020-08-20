@@ -1,0 +1,72 @@
+@import "../../config.scss";
+
+.content {
+  @include flexbox($align: flex-start);
+
+  &__visual {
+    &__image {
+      display: none;
+
+      &--show {
+        display: block;
+      }
+    }
+  }
+
+  &__features {
+    @include flexbox($direction: column);
+
+    .feature {
+      display: grid;
+      row-gap: 2rem;
+      column-gap: 1.5rem;
+      grid-template-columns: 50px 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "icon title"
+        ". description";
+      padding: 0 15px;
+      margin-bottom: 2rem;
+
+      overflow: hidden;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #e4e6f3;
+      }
+
+      &__icon {
+        height: 50px;
+        width: 50px;
+
+        cursor: pointer;
+
+        grid-area: icon;
+      }
+
+      &__title {
+        color: $primary-orange;
+        font-size: 1.5rem;
+        font-weight: $medium;
+        line-height: 2.125rem;
+
+        cursor: pointer;
+
+        height: 100%;
+
+        grid-area: title;
+      }
+
+      &__description {
+        color: $gray;
+        font-weight: $normal;
+        font-size: 1.125rem;
+
+        margin-bottom: 1rem;
+
+        // height: 0;
+
+        grid-area: description;
+      }
+    }
+  }
+}
