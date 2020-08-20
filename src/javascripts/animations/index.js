@@ -1,5 +1,6 @@
 import OnScrollAnimation from './onScroll';
 import LandingPageAnimations from './landing';
+import ScrollTriggerAnimations from './scrollTriggers';
 
 const onScroll = new OnScrollAnimation();
 onScroll.load();
@@ -7,4 +8,5 @@ onScroll.load();
 const landing = new LandingPageAnimations();
 landing.load();
 
-export { landing, onScroll };
+const scrollTriggers = new ScrollTriggerAnimations();
+scrollTriggers.load();

@@ -20,12 +20,17 @@
     box-shadow: rgba(127, 163, 202, 0.1) 0px 5px 15px;
   }
 
-  .logo__img {
-    height: 2rem;
-    transition: all 200ms ease;
+  .logo {
+    height: 2.5rem;
+    width: 200px;
 
-    &--on-scroll {
-      height: 2.5rem;
+    &__img {
+      height: 2rem;
+      transition: all 200ms ease;
+
+      &--on-scroll {
+        height: 100%;
+      }
     }
   }
 
